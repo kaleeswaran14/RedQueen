@@ -1,0 +1,14 @@
+--- 
+applications: 
+  .: 
+    name: kaleeswaran
+    instances: 1
+    framework: 
+      name: java_web
+      info: 
+        exec: 
+        description: Java Web Application
+        mem: 512M
+    url: redqueencorporation.ap01.aws.af.cm
+    infra: ap-aws
+    mem: 512M
