@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>corp.redqueen</groupId>
-	<artifactId>redqueen-db-driven.app</artifactId>
+	<artifactId>redqueen-db-driven</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
 	<name>redqueen-db-driven.app Maven Webapp</name>
@@ -26,7 +26,7 @@
         </dependency>
 	</dependencies>
 	<build>
-		<finalName>redqueen-db-driven.app</finalName>
+		<finalName>RedQueenCorp</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -34,7 +34,7 @@
 				<version>1.1</version>
 				<configuration>
 					<path>/redqueen</path>
-					<server>dev-server</server>
+<!-- 					<server>dev-server</server> -->
 					<port>2468</port>
 				</configuration>
 			</plugin>
