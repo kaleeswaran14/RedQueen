@@ -5,7 +5,7 @@
 	<artifactId>redqueen-db-driven</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
-	<name>redqueen-db-driven.app Maven Webapp</name>
+	<name>redqueen-db-driven Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>

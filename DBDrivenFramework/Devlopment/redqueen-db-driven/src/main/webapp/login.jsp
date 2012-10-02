@@ -1,7 +1,9 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <html>
-<head></head>
+<head>
+	<title>RedQueen Corp</title>
+</head>
 <body>
 	<h1>RedQueen Corporation Welcomes you </h1>
  
