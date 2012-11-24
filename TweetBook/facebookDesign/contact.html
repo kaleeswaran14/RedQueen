@@ -1,0 +1,155 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<link rel="stylesheet" type="text/css" href="contact.css" media="all">
+</head>
+<body><div id="contactformarea">
+<div class="block">
+<div class="done">
+<b>Thank you !</b> We have received your message.
+</div>
+<div class="error">
+</div>
+    <div class="form">
+    <form method="post" action="http://labs.shubhamtipstricks.com/includes/process.php">
+    <div class="element">
+        <label>Name</label>
+        <input value="" name="name" id="name" class="text" type="text">
+    </div>
+    <div class="element">
+        <label>Email</label>
+        <input value="" name="email" id="email" class="text" type="text">
+    </div>
+    <div class="element">
+        <label>Website</label>
+        <input name="website" id="website" class="text" type="url">
+    </div>
+    <div class="element">
+        <label>Comment</label>
+        <textarea name="comment" id="comment" class="text textarea"></textarea>
+    </div>
+    <div class="element">
+        <label>Captcha:&nbsp;<img src="get_captcha.php" id="captcha" height="50px" width="165px"></label>
+        <input name="code" value="" id="code" class="text" type="text"><i id="refresh" class="btn icon-refresh"></i>
+    </div>
+    <div class="element">
+        <input id="submit" class="btn btn-primary" type="submit">
+        <div class="loading"></div>
+    </div>
+    </form>
+    </div>
+</div>
+<div class="clear"></div>
+	
+</div>
+
+<script>
+
+$(document).ready(function() {
+ 
+    //if submit button is clicked
+    $('#submit').click(function () {        
+ 
+        //Get the data from all the fields
+        var name = $('input[name=name]');
+        var email = $('input[name=email]');
+        var website = $('input[name=website]');
+        var comment = $('textarea[name=comment]');
+        var code = $('#code');
+ 
+        //Simple validation to make sure user entered something
+        //If error found, add hightlight class to the text field
+        if (name.val()=='') {
+            name.addClass('hightlight').focus();
+            return false;
+        } else name.removeClass('hightlight');
+ 
+        if (email.val()=='') {
+            email.addClass('hightlight').focus();
+            return false;
+        } else email.removeClass('hightlight');
+ 
+        if (comment.val()=='') {
+            comment.addClass('hightlight').focus();
+            return false;
+        } else comment.removeClass('hightlight');
+ 
+        if (code.val()=='') {
+            code.addClass('hightlight').focus();
+            return false;
+        } else code.removeClass('hightlight');
+ 
+        //organize the data properly
+        var data = 'send=yes&code='+code.val()+'&name=' + name.val() + '&email=' + email.val() + '&website='
+        + website.val() + '&comment='  + encodeURIComponent(comment.val());
+ 
+        //disabled all the text fields
+ 
+        //show the loading sign
+        $('.loading').show();
+ 
+        //start the ajax
+        $.ajax({
+            //this is the php file that processes the data and send mail
+            url: "includes/process.php", 
+ 
+            //GET method is used
+            type: "GET",
+ 
+            //pass the data
+            data: data,     
+ 
+            //Do not cache the page
+            cache: false,
+ 
+            //success
+            success: function (html) {
+                //if process.php returned 1/true (send mail success)
+                if (html==1) {
+                    //hide the form
+                    $('.form').fadeOut('slow');                 
+                    clear_form();
+                    change_captcha();
+
+                    //show the success message
+                    $('.done').fadeIn('slow');
+ 
+                //if process.php returned 0/false (send mail failed)
+                } else { 
+                    $('.error').fadeIn('slow').html(html); 
+
+        $('.loading').hide();}
+            }
+        });
+ 
+        //cancel the submit button default behaviours
+        return false;
+    });
+	 
+	 // refresh captcha
+	 $('#refresh').click(function() {  
+			
+			change_captcha();
+				$(".loading").show('slow').hide('slow');
+	 });
+	 
+	 function change_captcha()
+	 {
+	 	document.getElementById('captcha').src="includes/get_captcha.php?rnd=" + Math.random();
+	 	$("#code").val('');
+	 }
+	 
+	 function clear_form()
+	 {
+	 	$("#name").val('');
+		$("#email").val('');
+		$("#comment").val('');
+	 }
+});
+ 
+ 
+ 	
+</script></body>
+</html>

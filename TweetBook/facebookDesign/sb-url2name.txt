@@ -1,0 +1,3 @@
+http://labs.shubhamtipstricks.com/	index
+http://labs.shubhamtipstricks.com/includes/loadindex.php	loadindex
+http://labs.shubhamtipstricks.com/contact.php	contact

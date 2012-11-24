@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../../sitemap.xsl" type="text/xsl" media="all"?>
+<site>
+<page file="index.html" text="Dashboard - Fortuna Admin Template" title="Dashboard - Fortuna Admin Template">
+<page file="navbar.html" text=" Navbar" title="Navbar - Fortuna Admin Template">
+<page file="navbar_001.html" text=" Dark" title="Navbar - Fortuna Admin Template"/>
+<page file="navbar_002.html" text=" Golden" title="Navbar - Fortuna Admin Template"/>
+<page file="navbar_003.html" text=" Blue" title="Navbar - Fortuna Admin Template"/>
+<page file="navbar_004.html" text=" Maroon" title="Navbar - Fortuna Admin Template"/>
+<page file="navbar_005.html" text=" Orange" title="Navbar - Fortuna Admin Template"/>
+</page>
+<page file="collapse.html" text=" Collapse" title="Collapse - Fortuna Admin Template">
+<page file="collapse_001.html" text=" Dark" title="Collapse - Fortuna Admin Template"/>
+<page file="collapse_002.html" text=" Golden" title="Collapse - Fortuna Admin Template"/>
+<page file="collapse_003.html" text=" Blue" title="Collapse - Fortuna Admin Template"/>
+<page file="collapse_004.html" text=" Maroon" title="Collapse - Fortuna Admin Template"/>
+<page file="collapse_005.html" text=" Orange" title="Collapse - Fortuna Admin Template"/>
+</page>
+<page file="tabs.html" text=" Tabs" title="Tabs - Fortuna Admin Template">
+<page file="tabs_001.html" text=" Dark" title="Tabs - Fortuna Admin Template"/>
+<page file="tabs_002.html" text=" Golden" title="Tabs - Fortuna Admin Template"/>
+<page file="tabs_003.html" text=" Blue" title="Tabs - Fortuna Admin Template"/>
+<page file="tabs_004.html" text=" Maroon" title="Tabs - Fortuna Admin Template"/>
+<page file="tabs_005.html" text=" Orange" title="Tabs - Fortuna Admin Template"/>
+</page>
+<page file="buttons.html" text=" Buttons" title="Buttons - Fortuna Admin Template">
+<page file="buttons_001.html" text=" Dark" title="Buttons - Fortuna Admin Template"/>
+<page file="buttons_002.html" text=" Golden" title="Buttons - Fortuna Admin Template"/>
+<page file="buttons_003.html" text=" Blue" title="Buttons - Fortuna Admin Template"/>
+<page file="buttons_004.html" text=" Maroon" title="Buttons - Fortuna Admin Template"/>
+<page file="buttons_005.html" text=" Orange" title="Buttons - Fortuna Admin Template"/>
+</page>
+<page file="tables.html" text=" Tables" title="Tables - Fortuna Admin Template">
+<page file="tables_001.html" text=" Dark" title="Tables - Fortuna Admin Template"/>
+<page file="tables_002.html" text=" Golden" title="Tables - Fortuna Admin Template"/>
+<page file="tables_003.html" text=" Blue" title="Tables - Fortuna Admin Template"/>
+<page file="tables_004.html" text=" Maroon" title="Tables - Fortuna Admin Template"/>
+<page file="tables_005.html" text=" Orange" title="Tables - Fortuna Admin Template"/>
+</page>
+<page file="paginations.html" text=" Paginations" title="Paginations - Fortuna Admin Template">
+<page file="paginations_001.html" text=" Dark" title="Paginations - Fortuna Admin Template"/>
+<page file="paginations_002.html" text=" Golden" title="Paginations - Fortuna Admin Template"/>
+<page file="paginations_003.html" text=" Blue" title="Paginations - Fortuna Admin Template"/>
+<page file="paginations_004.html" text=" Maroon" title="Paginations - Fortuna Admin Template"/>
+<page file="paginations_005.html" text=" Orange" title="Paginations - Fortuna Admin Template"/>
+</page>
+<page file="breadcrumbs.html" text=" Breadcrumbs" title="Breadcrumbs - Fortuna Admin Template">
+<page file="breadcrumbs_001.html" text=" Dark" title="Breadcrumbs - Fortuna Admin Template"/>
+<page file="breadcrumbs_002.html" text=" Golden" title="Breadcrumbs - Fortuna Admin Template"/>
+<page file="breadcrumbs_003.html" text=" Blue" title="Breadcrumbs - Fortuna Admin Template"/>
+<page file="breadcrumbs_004.html" text=" Maroon" title="Breadcrumbs - Fortuna Admin Template"/>
+<page file="breadcrumbs_005.html" text=" Orange" title="Breadcrumbs - Fortuna Admin Template"/>
+</page>
+<page file="labels.html" text=" Labels" title="Labels - Fortuna Admin Template">
+<page file="labels_001.html" text=" Dark" title="Labels - Fortuna Admin Template"/>
+<page file="labels_002.html" text=" Golden" title="Labels - Fortuna Admin Template"/>
+<page file="labels_003.html" text=" Blue" title="Labels - Fortuna Admin Template"/>
+<page file="labels_004.html" text=" Maroon" title="Labels - Fortuna Admin Template"/>
+<page file="labels_005.html" text=" Orange" title="Labels - Fortuna Admin Template"/>
+</page>
+<page file="datepicker.html" text=" Datepicker" title="Datepicker - Fortuna Admin Template">
+<page file="datepicker_001.html" text=" Dark" title="Datepicker - Fortuna Admin Template"/>
+<page file="datepicker_002.html" text=" Golden" title="Datepicker - Fortuna Admin Template"/>
+<page file="datepicker_003.html" text=" Blue" title="Datepicker - Fortuna Admin Template"/>
+<page file="datepicker_004.html" text=" Maroon" title="Datepicker - Fortuna Admin Template"/>
+<page file="datepicker_005.html" text=" Orange" title="Datepicker - Fortuna Admin Template"/>
+</page>
+<page file="colorpicker.html" text=" Colorpicker" title="Colorpicker - Fortuna Admin Template">
+<page file="colorpicker_001.html" text=" Dark" title="Colorpicker - Fortuna Admin Template"/>
+<page file="colorpicker_002.html" text=" Golden" title="Colorpicker - Fortuna Admin Template"/>
+<page file="colorpicker_003.html" text=" Blue" title="Colorpicker - Fortuna Admin Template"/>
+<page file="colorpicker_004.html" text=" Maroon" title="Colorpicker - Fortuna Admin Template"/>
+<page file="colorpicker_005.html" text=" Orange" title="Colorpicker - Fortuna Admin Template"/>
+</page>
+<page file="font-icon-packs.html" text=" Font Icon Packs" title="Font Icon Packs - Fortuna Admin Template">
+<page file="font-icon-packs_001.html" text=" Dark" title="Font Icon Packs - Fortuna Admin Template"/>
+<page file="font-icon-packs_002.html" text=" Golden" title="Font Icon Packs - Fortuna Admin Template"/>
+<page file="font-icon-packs_003.html" text=" Blue" title="Font Icon Packs - Fortuna Admin Template"/>
+<page file="font-icon-packs_004.html" text=" Maroon" title="Font Icon Packs - Fortuna Admin Template"/>
+<page file="font-icon-packs_005.html" text=" Orange" title="Font Icon Packs - Fortuna Admin Template"/>
+</page>
+<page file="charts.html" text=" Google Charts" title="Google Chart - Fortuna Admin Template">
+<page file="charts_001.html" text=" Dark" title="Google Chart - Fortuna Admin Template"/>
+<page file="charts_002.html" text=" Golden" title="Google Chart - Fortuna Admin Template"/>
+<page file="charts_003.html" text=" Blue" title="Google Chart - Fortuna Admin Template"/>
+<page file="charts_004.html" text=" Maroon" title="Google Chart - Fortuna Admin Template"/>
+<page file="charts_005.html" text=" Orange" title="Google Chart - Fortuna Admin Template"/>
+</page>
+<page file="default.html" text=" Dark" title="Dashboard - Fortuna Admin Template">
+<page file="stats_001.html" text=" Stats" title="Web Statistics - Fortuna Admin Template"/>
+<page file="articles_001.html" text=" List" title="Articles - Fortuna Admin Template"/>
+<page file="add-new-article_001.html" text=" Add New" title="Add New Article - Fortuna Admin Template"/>
+<page file="article-category_001.html" text=" Categories" title="Article Categories - Fortuna Admin Template"/>
+<page file="pages_001.html" text=" List" title="Pages - Fortuna Admin Template"/>
+<page file="add-new-page_001.html" text=" Add New" title="Add New Page - Fortuna Admin Template"/>
+<page file="field-reports_001.html" text=" List" title="Field Reports - Fortuna Admin Template"/>
+<page file="add-new-field-report_001.html" text=" Add New" title="Add New Field Report - Fortuna Admin Template"/>
+<page file="field-report-category_001.html" text=" Categories" title="Field Report Categories - Fortuna Admin Template"/>
+<page file="media-library_001.html" text=" Library" title="Media Library - Fortuna Admin Template"/>
+<page file="add-new-media_001.html" text=" Add New" title="Add Media Library - Fortuna Admin Template"/>
+<page file="comments_001.html" text=" Comments" title="Comments - Fortuna Admin Template"/>
+</page>
+<page file="default_001.html" text=" Golden" title="Dashboard - Fortuna Admin Template">
+<page file="stats_002.html" text=" Stats" title="Web Statistics - Fortuna Admin Template"/>
+<page file="articles_002.html" text=" List" title="Articles - Fortuna Admin Template"/>
+<page file="add-new-article_002.html" text=" Add New" title="Add New Article - Fortuna Admin Template"/>
+<page file="article-category_002.html" text=" Categories" title="Article Categories - Fortuna Admin Template"/>
+<page file="pages_002.html" text=" List" title="Pages - Fortuna Admin Template"/>
+<page file="add-new-page_002.html" text=" Add New" title="Add New Page - Fortuna Admin Template"/>
+<page file="field-reports_002.html" text=" List" title="Field Reports - Fortuna Admin Template"/>
+<page file="add-new-field-report_002.html" text=" Add New" title="Add New Field Report - Fortuna Admin Template"/>
+<page file="field-report-category_002.html" text=" Categories" title="Field Report Categories - Fortuna Admin Template"/>
+<page file="media-library_002.html" text=" Library" title="Media Library - Fortuna Admin Template"/>
+<page file="add-new-media_002.html" text=" Add New" title="Add Media Library - Fortuna Admin Template"/>
+<page file="comments_002.html" text=" Comments" title="Comments - Fortuna Admin Template"/>
+</page>
+<page file="default_002.html" text=" Blue" title="Dashboard - Fortuna Admin Template">
+<page file="stats_003.html" text=" Stats" title="Web Statistics - Fortuna Admin Template"/>
+<page file="articles_003.html" text=" List" title="Articles - Fortuna Admin Template"/>
+<page file="add-new-article_003.html" text=" Add New" title="Add New Article - Fortuna Admin Template"/>
+<page file="article-category_003.html" text=" Categories" title="Article Categories - Fortuna Admin Template"/>
+<page file="pages_003.html" text=" List" title="Pages - Fortuna Admin Template"/>
+<page file="add-new-page_003.html" text=" Add New" title="Add New Page - Fortuna Admin Template"/>
+<page file="field-reports_003.html" text=" List" title="Field Reports - Fortuna Admin Template"/>
+<page file="add-new-field-report_003.html" text=" Add New" title="Add New Field Report - Fortuna Admin Template"/>
+<page file="field-report-category_003.html" text=" Categories" title="Field Report Categories - Fortuna Admin Template"/>
+<page file="media-library_003.html" text=" Library" title="Media Library - Fortuna Admin Template"/>
+<page file="add-new-media_003.html" text=" Add New" title="Add Media Library - Fortuna Admin Template"/>
+<page file="comments_003.html" text=" Comments" title="Comments - Fortuna Admin Template"/>
+</page>
+<page file="default_003.html" text=" Maroon" title="Dashboard - Fortuna Admin Template">
+<page file="stats_004.html" text=" Stats" title="Web Statistics - Fortuna Admin Template"/>
+<page file="articles_004.html" text=" List" title="Articles - Fortuna Admin Template"/>
+<page file="add-new-article_004.html" text=" Add New" title="Add New Article - Fortuna Admin Template"/>
+<page file="article-category_004.html" text=" Categories" title="Article Categories - Fortuna Admin Template"/>
+<page file="pages_004.html" text=" List" title="Pages - Fortuna Admin Template"/>
+<page file="add-new-page_004.html" text=" Add New" title="Add New Page - Fortuna Admin Template"/>
+<page file="field-reports_004.html" text=" List" title="Field Reports - Fortuna Admin Template"/>
+<page file="add-new-field-report_004.html" text=" Add New" title="Add New Field Report - Fortuna Admin Template"/>
+<page file="field-report-category_004.html" text=" Categories" title="Field Report Categories - Fortuna Admin Template"/>
+<page file="media-library_004.html" text=" Library" title="Media Library - Fortuna Admin Template"/>
+<page file="add-new-media_004.html" text=" Add New" title="Add Media Library - Fortuna Admin Template"/>
+<page file="comments_004.html" text=" Comments" title="Comments - Fortuna Admin Template"/>
+</page>
+<page file="default_004.html" text=" Orange" title="Dashboard - Fortuna Admin Template">
+<page file="stats_005.html" text=" Stats" title="Web Statistics - Fortuna Admin Template"/>
+<page file="articles_005.html" text=" List" title="Articles - Fortuna Admin Template"/>
+<page file="add-new-article_005.html" text=" Add New" title="Add New Article - Fortuna Admin Template"/>
+<page file="article-category_005.html" text=" Categories" title="Article Categories - Fortuna Admin Template"/>
+<page file="pages_005.html" text=" List" title="Pages - Fortuna Admin Template"/>
+<page file="add-new-page_005.html" text=" Add New" title="Add New Page - Fortuna Admin Template"/>
+<page file="field-reports_005.html" text=" List" title="Field Reports - Fortuna Admin Template"/>
+<page file="add-new-field-report_005.html" text=" Add New" title="Add New Field Report - Fortuna Admin Template"/>
+<page file="field-report-category_005.html" text=" Categories" title="Field Report Categories - Fortuna Admin Template"/>
+<page file="media-library_005.html" text=" Library" title="Media Library - Fortuna Admin Template"/>
+<page file="add-new-media_005.html" text=" Add New" title="Add Media Library - Fortuna Admin Template"/>
+<page file="comments_005.html" text=" Comments" title="Comments - Fortuna Admin Template"/>
+</page>
+<page file="stats.html" text=" Stats" title="Web Statistics - Fortuna Admin Template"/>
+<page file="articles.html" text=" List" title="Articles - Fortuna Admin Template"/>
+<page file="add-new-article.html" text=" Add New" title="Add New Article - Fortuna Admin Template"/>
+<page file="article-category.html" text=" Categories" title="Article Categories - Fortuna Admin Template"/>
+<page file="pages.html" text=" List" title="Pages - Fortuna Admin Template"/>
+<page file="add-new-page.html" text=" Add New" title="Add New Page - Fortuna Admin Template"/>
+<page file="field-reports.html" text=" List" title="Field Reports - Fortuna Admin Template"/>
+<page file="add-new-field-report.html" text=" Add New" title="Add New Field Report - Fortuna Admin Template"/>
+<page file="field-report-category.html" text=" Categories" title="Field Report Categories - Fortuna Admin Template"/>
+<page file="media-library.html" text=" Library" title="Media Library - Fortuna Admin Template"/>
+<page file="add-new-media.html" text=" Add New" title="Add Media Library - Fortuna Admin Template"/>
+<page file="comments.html" text=" Comments" title="Comments - Fortuna Admin Template"/>
+</page>
+</site>

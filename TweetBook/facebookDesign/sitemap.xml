@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../../sitemap.xsl" type="text/xsl" media="all"?>
+<site>
+<page file="index.html" text="Home || STT Social Networking Site" title="Home || STT Social Networking Site">
+<page file="loadindex.html" text="Home" title=""/>
+<page file="contact.html" text="Contact" title=""/>
+</page>
+</site>

@@ -1,0 +1,10 @@
+.clear { clear: both; }
+.block { width: 400px; margin: 0pt auto; text-align: left; }
+.element * { padding: 5px; margin: 2px; font-family: arial; font-size: 12px; }
+.element label { float: left; width: 75px; font-weight: 700; }
+.element input.text { float: left; width: 270px; padding-left: 20px; }
+.element .textarea { height: 120px; width: 270px; padding-left: 20px; }
+.element #submit { float: right; margin-right: 10px; }
+.loading { float: right; background: url('load_001.gif') no-repeat scroll 1px 50% transparent; height: 28px; width: 28px; display: none; }
+.done { background: url('iconidea.gif') no-repeat scroll 2px 50% transparent; padding-left: 20px; font-family: arial; font-size: 12px; width: 70%; margin: 20px auto; display: none; }
+.error { padding-left: 20px; font-family: arial; font-size: 12px; width: 70%; margin: 20px auto; display: none; background: url('iconcaution.gif') no-repeat scroll 2px 50% transparent; }
