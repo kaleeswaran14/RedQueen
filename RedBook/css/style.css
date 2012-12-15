@@ -1,0 +1,351 @@
+ /*
+	Style for RedBook
+	Copyright 2012 Kaleeswaran
+	Licensed under the Apache License v2.0
+	http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+/*
+http://wbpreview.com/previews/WB00U99JJ/
+*/
+
+body {
+    padding-top: 60px;
+}
+
+.navbar .brand {
+    font-weight: 600;
+    position: relative;
+    top: 0px;
+}
+
+.subnavbar {
+    border-top: 1px solid #595959;
+    margin-bottom: 2.5em;
+}
+
+.subnavbar-inner {
+    /*background: -moz-linear-gradient(center top , #414141, #323232) repeat-x scroll 0 0 #3A3A3A;*/
+    border-bottom: 1px solid #000000;
+    height: 80px;
+}
+
+.subnavbar .container > ul {
+    border-left: 1px solid #292929;
+    border-right: 1px solid #4A4A4A;
+    display: inline-block;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.subnavbar .container > ul > li {
+    border-left: 1px solid #4A4A4A;
+    border-right: 1px solid #292929;
+    float: left;
+    height: 80px;
+    list-style: none outside none;
+    margin: 0;
+    min-width: 90px;
+    padding: 0;
+    text-align: center;
+}
+
+.subnavbar .dropdown .dropdown-menu {
+    text-align: left;
+}
+
+.subnavbar .container > ul > li > a {
+    color: #636363;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 100%;
+    padding: 0 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.subnavbar .dropdown-menu:after {
+    border-bottom: 6px solid white;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 10px;
+    position: absolute;
+    top: -6px;
+}
+
+.subnavbar .dropdown-menu:before {
+    border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 9px;
+    position: absolute;
+    top: -7px;
+}
+
+.subnavbar .dropdown .dropdown-menu {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    text-align: left;
+}
+
+.subnavbar .dropdown .dropdown-menu {
+    text-align: left;
+}
+
+.subnavbar .dropdown .dropdown-menu a {
+    font-size: 12px;
+}
+
+.main {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 2em;
+}
+
+/*
+
+Fortuna admin template
+*/
+
+.dropdown-menu.megamenu:after {
+    border-bottom: 12px solid #FFFFFF;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    content: "";
+    top: -12px;
+}
+
+.megamenu {
+    margin: 4px 0 0;
+    padding: 0;
+}
+
+.megamenu .sub {
+    display: inline-block;
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+.megamenu.col2.ud li.sub:first-child {
+    width: 90px;
+}
+
+.img_round:after {
+    border: 5px solid #FFFFFF;
+    box-shadow: 0 0 0 30px #FFFFFF;
+    z-index: 1;
+}
+
+.megamenu.col2.ud {
+    width: 280px;
+}
+
+.img_round:after, .img_round:before {
+    border: 1px solid #999999;
+    border-radius: 50% 50% 50% 50%;
+    bottom: 3px;
+    box-shadow: 0 1px 1px 1px #BBBBBB;
+    content: "";
+    left: 3px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    z-index: 2;
+}
+
+.img_round:after, .img_round:before {
+    border: 1px solid #999999;
+    border-radius: 50% 50% 50% 50%;
+    bottom: 3px;
+    box-shadow: 0 1px 1px 1px #BBBBBB;
+    content: "";
+    left: 3px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    z-index: 2;
+}
+
+.img_round {
+    float: left;
+    height: 60px;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+    padding: 7px;
+    position: relative;
+    width: 60px;
+}
+
+.img_c_margin {
+    display: inline !important;
+    margin: 10px 0 0 10px !important;
+}
+
+.badge {
+    padding: 3px 7px;
+    z-index: 50;
+}
+
+.abs {
+    left: -20px;
+    position: absolute !important;
+    top: -10px !important;
+}
+
+.dropdown-menu.fb-one .heading h3 {
+    color: #454545;
+    font-size: 12px;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+.dropdown-menu.fb-one .heading a {
+    background: none repeat scroll 0 0 transparent;
+    color: #6079AB;
+    float: right;
+    font-size: 11px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    text-shadow: none;
+}
+
+.dropdown-menu.fb-one li .content li.fb_avatar img {
+    border: 1px solid #454545;
+    height: 50px;
+    margin-top: 3px;
+    width: 50px;
+}
+
+.dropdown-menu.fb-one .heading h3, .dropdown-menu.fb-one .heading a {
+    display: inline-block;
+    line-height: 30px;
+}
+
+.dropdown-menu.fb-one .heading h3, .dropdown-menu.fb-one .heading a {
+    display: inline-block;
+    line-height: 30px;
+}
+
+.dropdown-menu.fb-one:after {
+    border-bottom: 12px solid #FFFFFF;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -12px;
+}
+
+.dropdown-menu.fb-one:before {
+    border-bottom: 13px solid rgba(0, 0, 0, 0.2);
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+}
+
+.dropdown-menu.fb-one .heading {
+    border-bottom: 1px solid #DDDDDD;
+    height: 30px;
+}
+
+.confirm_fb {
+    background-color: #FFF9D7;
+}
+
+.dropdown-menu.fb-one {
+    text-shadow: none;
+}
+.dropdown-menu.fb-one li .content {
+    border-bottom: 1px solid #DDDDDD;
+    display: table;
+    height: 60px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.dropdown-menu.fb-one li .content li.fb_avatar {
+    width: 55px;
+}
+
+.dropdown-menu.fb-one li .content li {
+    display: table-cell;
+    font-size: 11px;
+    padding: 5px;
+    vertical-align: top;
+}
+
+.dropdown-menu.fb-one li .content {
+    list-style: none outside none;
+}
+
+.dropdown-menu.fb-one li .content li.fb_avatar img {
+    border: 1px solid #454545;
+    height: 50px;
+    margin-top: 3px;
+    width: 50px;
+}
+
+.dropdown-menu.fb-one li .content li.fb_uname {
+    min-width: 90px;
+}
+
+.dropdown-menu.fb-one li .content li {
+    display: table-cell;
+    font-size: 11px;
+    padding: 5px;
+    vertical-align: top;
+}
+
+.dropdown-menu.fb-one li .content {
+    list-style: none outside none;
+}
+
+.dropdown-menu.fb-one li .content li.fb_uname h4 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.dropdown-menu.fb-one li .content li.fb_uname span {
+    line-height: 14px;
+}
+
+.dropdown-menu.fb-one li .content li.fb_uname h4, .dropdown-menu.fb-one li .content li.fb_uname span {
+    color: #898989;
+    display: block;
+    margin: 0 0 5px 5px;
+    padding: 0;
+    text-align: left;
+}
+
+.dropdown-menu.fb-one li .content li {
+    font-size: 11px;
+}
+
+.dropdown-menu.fb-one li .content li.fb_action {
+    text-align: right;
+}
+
+.dropdown-menu.fb-one li .content li {
+    display: table-cell;
+    font-size: 11px;
+    padding: 5px;
+    vertical-align: top;
+}
+
+.dropdown-menu.fb-one li .content {
+    list-style: none outside none;
+}
+
+.dropdown-menu.fb-one li .content li.fb_action button {
+    margin: 10px 0 0;
+}

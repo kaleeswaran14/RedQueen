@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/combine_font.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <a class="brand" href="#">RedBook</a>
+
+
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li class="dropdown">
+                
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                  <i class="icon-cog"></i>
+                  Settings
+                  <b class="caret"></b>
+                </a>
+                
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:;">Account Settings</a></li>
+                  <li><a href="javascript:;">Privacy Settings</a></li>
+                  <li class="divider"></li>
+                  <li><a href="javascript:;">Help</a></li>
+                </ul>
+                
+              </li>
+          
+              <li class="dropdown">
+                
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                  <i class="icon-user"></i> 
+                  Rod Howard
+                  <b class="caret"></b>
+                </a>
+                
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:;">My Profile</a></li>
+                  <li><a href="javascript:;">My Groups</a></li>
+                  <li class="divider"></li>
+                  <li><a href="javascript:;">Logout</a></li>
+                </ul>
+                
+              </li>
+          </ul>
+          <form class="navbar-search pull-right">
+          <input type="text" placeholder="Search" class="search-query">
+        </form>
+          </div>
+
+
+          <!--/.nav-collapse -->
+
+<!--           <div class="btn-toolbar pull-right">
+        
+        <div class="btn-group">
+        <a href="#" data-toggle="dropdown" class="btn dropdown-toggle rel"><i class="icon-large icon-th-2"></i><span class="badge badge-important abs">20</span></a>
+        <ul class="dropdown-menu fb-one">
+          <li class="heading">
+          <h3>Friend Requests</h3><a href="#">Find Friends</a>
+          </li>
+          
+          <li class="confirm_fb">
+          <ul class="content">
+          <li class="fb_avatar"><img src="img/avatar-sample-01.jpg"></li>
+          <li class="fb_uname"><h4><a href="#">Esther</a></h4><span>10 Mutual Friends</span></li>
+          <li class="fb_action"><button class="btn btn-small"><i class="icon-ok"></i> Friends</button></li>
+          </ul>
+          </li>
+          
+          <li>
+          <ul class="content">
+          <li class="fb_avatar"><img src="img/avatar-sample-02.jpg"></li>
+          <li class="fb_uname"><h4><a href="#">Nadya</a></h4><span>5 Mutual Friends</span></li>
+          <li class="fb_action"><button class="btn btn-small btn-primary">Confirm</button> <button class="btn btn-small">Not Now</button></li>
+          </ul>
+          </li>
+          
+          <li>
+          <ul class="content">
+          <li class="fb_avatar"><img src="img/avatar-sample-06.jpg"></li>
+          <li class="fb_uname"><h4><a href="#">Daniel</a></h4><span>37 Mutual Friends</span></li>
+          <li class="fb_action"><button class="btn btn-small btn-primary">Confirm</button> <button class="btn btn-small">Not Now</button></li>
+          </ul>
+          </li>
+          
+          <li>
+          <ul class="content">
+          <li class="fb_avatar"><img src="img/avatar-sample-03.jpg"></li>
+          <li class="fb_uname"><h4><a href="#">Yedida</a></h4><span>30 Mutual Friends</span></li>
+          <li class="fb_action"><button class="btn btn-small btn-primary">Confirm</button> <button class="btn btn-small">Not Now</button></li>
+          </ul>
+          </li>
+          
+          <li>
+          <ul class="content">
+          <li class="fb_avatar"><img src="img/avatar-sample-04.jpg"></li>
+          <li class="fb_uname"><h4><a href="#">Simeon</a></h4><span>32 Mutual Friends</span></li>
+          <li class="fb_action"><button class="btn btn-small btn-primary">Confirm</button> <button class="btn btn-small">Not Now</button></li>
+          </ul>
+          </li>
+          
+          <li>
+          <ul class="content">
+          <li class="fb_avatar"><img src="img/avatar-sample-05.jpg"></li>
+          <li class="fb_uname"><h4><a href="#">Theressia</a></h4><span>16 Mutual Friends</span></li>
+          <li class="fb_action"><button class="btn btn-small btn-primary">Confirm</button> <button class="btn btn-small">Not Now</button></li>
+          </ul>
+          </li>
+          
+          <li class="fb_dd_footer">
+          <a href="#">See All Friend Requests</a>
+          </li>
+        </ul>
+        </div>
+        
+        <div class="btn-group">
+          <a href="#" data-toggle="dropdown" class="btn dropdown-toggle">
+            <i class="icon-user-1"></i> Olas Navigator
+            <span class="caret"></span>
+          </a>
+          
+          <ul class="dropdown-menu megamenu col2 ud">
+            <li class="sub">
+            <div class="img_round img_c_margin"><img width="70" height="70" src="img/avatar-sample.png"></div>
+            </li>
+            <li class="sub">
+            <ul>
+            <li><a href="#"><i class="icon-large icon-cog-2"></i> Profile</a></li>
+            <li><a href="#"><i class="icon-large icon-key"></i> Privacy Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="icon-large icon-logout-1"></i> Logout</a></li>
+            </ul>
+            </li>
+          </ul>
+          
+        </div>
+        </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="subnavbar">
+
+  <div class="subnavbar-inner">
+  
+    <div class="container">
+
+      <ul class="mainnav">
+      
+        <li class="active">
+          <a href="./">
+            <i class="icon-home"></i>
+            <span>Home</span>
+          </a>              
+        </li>
+        
+        <li>
+          <a href="./faq.html">
+            <i class="icon-pushpin"></i>
+            <span>FAQ</span>
+          </a>              
+        </li>
+        
+        <li class="subnavbar-open-right">         
+          <a class="dropdown-toggle" href="./pricing.html">
+            <i class="icon-th-large"></i>
+            <span>Pricing Plans</span>
+          </a>            
+        </li>
+        
+        <li>
+          <a href="./reports.html">
+            <i class="icon-bar-chart"></i>
+            <span>Reports</span>
+          </a>            
+        </li>
+        
+        <li>          
+          <a href="./guidely.html">
+            <i class="icon-facetime-video"></i>
+            <span>Guided Tour</span>
+          </a>                    
+        </li>
+        
+        <li class="dropdown subnavbar-open-right">          
+          <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:;">
+            <i class="icon-share-alt"></i>
+            <span>More Pages</span>
+            <b class="caret"></b>
+          </a>  
+        
+          <ul class="dropdown-menu">
+            <li><a href="./charts.html">Charts</a></li>
+            <li><a href="./account.html">User Account</a></li>
+            <li class="divider subnavbar-open-right"></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./signup.html">Signup</a></li>
+            <li class="subnavbar-open-right"><a href="./error.html">Error</a></li>
+          </ul>           
+        </li>
+      
+      </ul>
+
+    </div> <!-- /container -->
+  
+  </div> <!-- /subnavbar-inner -->
+
+</div>
+
+    <div class="main">
+      <div class="main-inner">
+        <div class="container">
+          <div class="row">
+            <div class="span2" id="SideBar">
+            </div>
+            <div class="span10" id="main-content">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="extra"></div>
+    <div class="footer"></div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.form.js"></script>
+    </body>
+</html>
+
