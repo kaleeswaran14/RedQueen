@@ -11,7 +11,8 @@
     <properties>
         <struts2.version>2.3.7</struts2.version>
 <!--         <struts2.version>2.2.3</struts2.version> -->
-        <struts2jquery.version>3.3.3</struts2jquery.version>
+<!--         <struts2jquery.version>3.3.3</struts2jquery.version> -->
+        <struts2jquery.version>3.5.0</struts2jquery.version>
     </properties>
 
     <dependencies>
