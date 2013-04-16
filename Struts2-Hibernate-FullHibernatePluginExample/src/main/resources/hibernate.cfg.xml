@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+		<property name="hibernate.connection.url">jdbc:mysql://172.16.23.59:8889/mkyong</property>
+		<property name="hibernate.connection.username">java</property>
+        <property name="hibernate.connection.password">java</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="use_sql_comments">false</property>
+				    <!-- Echo all executed SQL to stdout -->
+<!--     <property name="show_sql">true</property> -->
+
+    <!-- Drop and re-create the database schema on startup -->
+    <property name="hbm2ddl.auto">update</property>
+		<mapping resource="com/mkyong/customer/hibernate/Customer.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>
