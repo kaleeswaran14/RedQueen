@@ -1,0 +1,114 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mkyong.common</groupId>
+  <artifactId>Struts2Example</artifactId>
+  <packaging>war</packaging>
+  <version>com.mkyong.common</version>
+  <name>Struts 2 + Hibernate integration Servlet Context example</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+  	
+	<!-- jUnit -->
+<!--     <dependency> -->
+<!-- 	    <groupId>junit</groupId> -->
+<!-- 	    <artifactId>junit</artifactId> -->
+<!-- 	    <version>3.8.1</version> -->
+<!-- 	    <scope>test</scope> -->
+<!--     </dependency> -->
+        <dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.9</version>
+	    <scope>test</scope>
+    </dependency>
+	
+	<!-- Struts 2 -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+	<dependency>
+	    <groupId>org.apache.struts</groupId>
+		<artifactId>struts2-core</artifactId>
+		<version>2.1.8</version>
+    </dependency>
+
+	<!-- MySQL database driver -->
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.24</version>
+	</dependency>
+
+<!-- <dependency> -->
+<!-- <groupId>javassist</groupId> -->
+<!-- <artifactId>javassist</artifactId> -->
+<!-- <version>3.4.GA</version> -->
+<!-- </dependency> -->
+
+	<!-- Hibernate core -->
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate</artifactId>
+		<version>3.2.7.ga</version>
+	</dependency>
+
+	<!-- Hibernate core library dependecy start -->
+	<dependency>
+		<groupId>dom4j</groupId>
+		<artifactId>dom4j</artifactId>
+		<version>1.6.1</version>
+	</dependency>
+
+	<dependency>
+		<groupId>commons-logging</groupId>
+		<artifactId>commons-logging</artifactId>
+		<version>1.1.1</version>
+	</dependency>
+
+	<dependency>
+		<groupId>commons-collections</groupId>
+		<artifactId>commons-collections</artifactId>
+		<version>3.2.1</version>
+	</dependency>
+
+<!-- 	<dependency> -->
+<!-- 		<groupId>cglib</groupId> -->
+<!-- 		<artifactId>cglib</artifactId> -->
+<!-- 		<version>2.2</version> -->
+<!-- 	</dependency> -->
+	
+<!-- 	mkyong -->
+		<dependency>
+		<groupId>cglib</groupId>
+		<artifactId>cglib-nodep</artifactId>
+		<version>2.2.2</version>
+	</dependency>
+	
+<!-- 			<dependency> -->
+<!-- 		<groupId>cglib</groupId> -->
+<!-- 		<artifactId>cglib-nodep</artifactId> -->
+<!-- 		<version>2.1_3</version> -->
+<!-- 	</dependency> -->
+	<!-- Hibernate core library dependecy end -->
+
+	<!-- Hibernate query library dependecy start -->
+	<dependency>
+		<groupId>antlr</groupId>
+		<artifactId>antlr</artifactId>
+		<version>2.7.7</version>
+	</dependency>
+	<!-- Hibernate query library dependecy end -->
+
+
+  </dependencies>
+  <build>
+    <finalName>Struts2Example</finalName>
+  </build>
+    <properties>
+        <netbeans.hint.deploy.server>Tomcat</netbeans.hint.deploy.server>
+    </properties>
+</project>
