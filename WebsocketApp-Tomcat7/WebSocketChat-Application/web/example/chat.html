@@ -1,0 +1,197 @@
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apache Tomcat WebSocket Examples: Chat</title>
+    <style type="text/css">
+        input#chat {
+            width: 410px
+        }
+
+        #console-container {
+            width: 800px;
+        }
+
+        #console {
+            border: 1px solid #CCCCCC;
+            border-right-color: #999999;
+            border-bottom-color: #999999;
+            height: 570px;
+            overflow-y: scroll;
+            padding: 5px;
+            width: 100%;
+        }
+
+        #console p {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script type="text/javascript">
+        var Chat = {};
+
+        Chat.socket = null;
+
+        Chat.connect = (function(host) {
+//            alert("host > " + host);
+            if ('WebSocket' in window) {
+                Chat.socket = new WebSocket(host);
+            } else if ('MozWebSocket' in window) {
+                Chat.socket = new MozWebSocket(host);
+            } else {
+                Console.log('Error: WebSocket is not supported by this browser.');
+                return;
+            }
+
+            Chat.socket.onopen = function () {
+                Console.log('Info: WebSocket connection opened.');
+                
+                // event contoller function call assign
+                document.getElementById('chat').onkeydown = function(event) {
+                    if (event.keyCode == 13) {
+//                        alert("Sen message calleddd..... ");
+                        Chat.sendMessage();
+                    }
+                };
+                
+                // Build event trigger
+                document.getElementById('build').onclick = function(event) {
+//                        alert("Build opearation added ..... ");
+                        document.getElementById('chat').value = "build";
+                        Chat.sendMessage();
+                };
+                
+                // Deploy event trigger
+                document.getElementById('deploy').onclick = function(event) {
+//                        alert("Deploy opearation added ..... ");
+                        document.getElementById('chat').value = "deploy";
+                        Chat.sendMessage();
+                };
+                
+            };
+
+            Chat.socket.onclose = function () {
+                document.getElementById('chat').onkeydown = null;
+                Console.log('Info: WebSocket closed.');
+            };
+
+            // Received message
+            Chat.socket.onmessage = function (message) {
+//                alert("Message received ... ");
+//                Console.log(message);
+                Console.log(message.data);
+                
+//                {"from":"client1","to":"client2","data":"dataFrom Client1"}
+                var clients = {};
+                
+                if (message.data instanceof String) {
+                    alert("Strimg instance ..... ");
+                }
+                
+                if (message.data instanceof Object) {
+                    alert("Object instance ..... ");
+                    var obj = JSON.parse(message.data);
+                    if("from" in obj) {
+                        clients[obj.from] = obj.from;
+                    } 
+                }
+               
+//                var obj = JSON.parse(message.data);
+//                var obj = message.data;
+//                Console.log("Obj .... " + obj);
+//                if("from" in obj) {
+//                   alert("Object is having from value ");
+                  // New client, add it to the id/client object
+//                  clients[obj.from] = obj.from;
+//                } 
+//                else {
+//                  alert("obj.to " + obj.to);
+//                  alert("obj.data " + obj.data);
+//                  // Send data to the client requested
+//                  clients[obj.to].send(obj.data);
+//                }
+            };
+        });
+
+        Chat.initialize = function() {
+//            alert("host > " + window.location.host + document.location.pathname + 'testWebSocket');
+            if (window.location.protocol == 'http:') {
+                Chat.connect('ws://' + window.location.host + document.location.pathname + 'testWebSocket');
+            } else {
+                Chat.connect('wss://' + window.location.host + document.location.pathname + 'testWebSocket');
+            }
+        };
+
+        Chat.sendMessage = (function() {
+            var message = document.getElementById('chat').value;
+            if (message != '') {
+                  // Construct a msg object containing the data the server needs to process the message from the chat client.
+                    var msg = {
+                      type: "message",
+                      appId: "appId",
+                      text: document.getElementById("chat").value,
+                      from: "client1",
+                      to:  "client2",
+                      date: Date.now()
+                    };
+
+                    // Send the msg object as a JSON-formatted string.
+//                    exampleSocket.send(JSON.stringify(msg));
+                    
+//                alert("Broad cating the message .... ");
+//                Chat.socket.send(message);
+//                Chat.socket.send(JSON.stringify({from: "client1", to: "client2", data: "dataFrom Client1"}));
+                Chat.socket.send(JSON.stringify(msg));
+                document.getElementById('chat').value = '';
+            }
+        });
+
+        var Console = {};
+
+        Console.log = (function(message) {
+            var console = document.getElementById('console');
+            var p = document.createElement('p');
+            p.style.wordWrap = 'break-word';
+            p.innerHTML = message;
+            console.appendChild(p);
+//            while (console.childNodes.length > 25) {
+//                console.removeChild(console.firstChild);
+//            }
+//            console.scrollTop = console.scrollHeight;
+        });
+
+        Chat.initialize();
+
+    </script>
+</head>
+<body>
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websockets rely on Javascript being enabled. Please enable
+    Javascript and reload this page!</h2></noscript>
+<div>
+    <p>
+            <!--placeholder="type and press enter to chat"--> 
+        <input type="hidden" id="chat">
+    </p>
+    <div><input type="button" name="build" value="build" id="build"></div>
+    <div><input type="button" name="deploy" value="deploy" id="deploy"></div>
+    <div id="console-container">
+        <div id="console"></div>
+    </div>
+</div>
+</body>
+</html>

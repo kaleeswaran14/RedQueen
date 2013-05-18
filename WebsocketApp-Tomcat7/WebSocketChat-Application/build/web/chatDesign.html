@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="csstransforms no-csstransforms3d csstransitions js cssanimations csstransitions">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+        <meta charset="utf-8">
+        <!-- Title -->
+        <title>Online Chat Messenger</title>
+        <!-- Description, Keywords -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is online free chat messenger">
+        <meta name="keywords" content="">
+        <meta name="author" content="Kaleeswaran">
+
+        <!-- Stylesheets -->
+
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="style/font-awesome-ie7.css">
+        <![endif]-->		
+
+        <!-- Color Stylesheet - orange, blue, pink, brown, red or green-->
+
+        <!-- HTML5 Support for IE -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shim.js"></script>
+        <![endif]-->
+
+        <!-- Favicon -->
+        <!--<link rel="shortcut icon" href="favicon.png">-->
+
+        <!--<link rel="stylesheet" type="text/css" href="index.css" media="all">-->
+
+        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic">
+        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/prettyPhoto.css">
+        <link href="css/font-awesome.css" rel="stylesheet">
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="css/font-awesome-ie7.css">
+        <![endif]-->    
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Color Stylesheet - orange, blue, pink, brown, red or green-->
+        <link rel="stylesheet" href="css/pink.css">    
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+
+        <!-- HTML5 Support for IE -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shim.js"></script>
+        <![endif]-->
+
+        <!-- Favicon -->
+        <link href="img/favicon/favicon.png" rel="shortcut icon">
+        <style type="text/css">
+            body {
+                line-height: 15px;
+            }
+        </style>
+        <script type="text/javascript">
+        var Chat = {};
+
+        Chat.socket = null;
+
+        Chat.connect = (function(host) {
+            if ('WebSocket' in window) {
+                Chat.socket = new WebSocket(host);
+            } else if ('MozWebSocket' in window) {
+                Chat.socket = new MozWebSocket(host);
+            } else {
+                Console.log('Error: WebSocket is not supported by this browser.');
+                return;
+            }
+
+            Chat.socket.onopen = function () {
+                Console.log('Info: WebSocket connection opened.');
+                document.getElementById('chat').onkeydown = function(event) {
+                    if (event.keyCode == 13) {
+                        Chat.sendMessage();
+                    }
+                };
+            };
+
+            Chat.socket.onclose = function () {
+                document.getElementById('chat').onkeydown = null;
+                Console.log('Info: WebSocket closed.');
+            };
+
+            Chat.socket.onmessage = function (message) {
+                Console.log(message.data);
+            };
+        });
+
+        Chat.initialize = function() {
+            if (window.location.protocol == 'http:') {
+                Chat.connect('ws://' + window.location.host + document.location.pathname + 'testWebSocket');
+            } else {
+                Chat.connect('wss://' + window.location.host + document.location.pathname + 'testWebSocket');
+            }
+        };
+
+        Chat.sendMessage = (function() {
+            var message = document.getElementById('chat').value;
+            var name = document.getElementById('name').value;
+            if (message != '') {
+                Chat.socket.send(name + "#SPLIT#" +message);
+                document.getElementById('chat').value = '';
+            }
+        });
+
+        var Console = {};
+
+        Console.log = (function(message) {
+//            var console = document.getElementById('console');
+//            var p = document.createElement('p');
+//            p.style.wordWrap = 'break-word';
+//            p.innerHTML = message;
+//            console.appendChild(p);
+            var substr = message.split("#SPLIT#");
+            var textMsg = "";
+            if (substr[1] != undefined) {
+                textMsg = " : " + substr[1];
+            }
+            
+            var NewChatRow = $(document.createElement('div')).attr("class", "span12");
+            NewChatRow.html("<div class='test' id='console' style='padding: 4px 12px;'><p style='word-wrap: break-word;'><i class='icon-user'></i> <span class='color' id='name'>" + substr[0] +"</span>" + textMsg + "</p></div>");
+            NewChatRow.prependTo("#chatRow");
+//            var chatRow = document.getElementById('chatRow');
+//            chatRow.appendChild(messageText);
+            
+//            while (console.childNodes.length > 25) {
+//                console.removeChild(console.firstChild);
+//            }
+//            console.scrollTop = console.scrollHeight;
+        });
+
+        Chat.initialize();
+
+    </script>
+    </head>
+    <body>
+        <noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websockets rely on Javascript being enabled. Please enable
+            Javascript and reload this page!</h2></noscript>
+
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="span4">
+                        <!-- Logo and site link -->
+                        <div class="logo">
+                            <h1><a href="chatDesign.html">5 Chat<span class="color">.</span></a></h1>
+                        </div>
+                    </div>
+                    <div class="span4 offset4">
+                        <div class="list">
+                            <!-- Add your phone number here -->
+                            <div class="phone">
+                                <i class="icon-home"></i> Phone: 9942371095
+                            </div>
+                            <hr>
+                            <!-- Add your email id here -->
+                            <div class="email">
+                                <i class="icon-home"></i> Email: kaleeswaran14@gmail.com
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Header ends -->
+
+        <!-- Navigation Starts -->
+
+        <!-- Note down the syntax before editing. It is the default twitter bootstrap navigation -->
+
+
+
+        <!-- Navigation Ends -->   
+
+        <!-- Content strats -->
+
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+
+                        <!-- CTA starts -->
+
+                        <div class="cta">
+                            <div class="row">
+                                <div class="span6">
+                                    <div class="cwell">
+                                        <!-- Chat board -->
+                                        <div class="form">
+                                            <!-- Contact form (not working)-->
+                                            <form class="form-horizontal" action="#">
+                                                <!-- Name -->
+                                                <div class="control-group">
+                                                    <label for="name" class="control-label">Your Name</label>
+                                                    <div class="controls">
+                                                        <input type="text" placeholder="Your name on chat board" id="name" class="input-medium" value="">
+                                                    </div>
+                                                </div>
+                                                <!-- Comment -->
+                                                <div class="control-group">
+                                                    <label for="comment" class="control-label">What's Up ?</label>
+                                                    <div class="controls">
+                                                        <textarea placeholder="Type and Enter " rows="3" id="chat" class="input-madium"></textarea>
+                                                    </div>
+                                                </div>
+                                                <!-- Buttons -->
+                                                <!--                                          <div class="form-actions">
+                                                                                              Buttons 
+                                                                                            <button class="btn" type="submit">Submit</button>
+                                                                                            <button class="btn" type="reset">Reset</button>
+                                                                                          </div>-->
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Ends -->
+
+                        <!-- Features list. Note down the class name before editing. -->
+
+                        <!-- Features ends -->
+
+                        <!--<div class="bor"></div>-->
+
+                        <!-- Testimonials -->
+
+                        <div class="testimonial">
+                            <div class="container">
+                                <div class="row" id="chatRow">
+                                    <div class="span12">
+<!--                                         Testimonial #1 
+                                        <div class="test" id="console">
+                                            Your message goes here .
+                                        </div>
+                                        <div class="test-arrow"></div>
+                                        <div class="tauth"><i class="icon-user"></i> <span class="color" id="name">Kalees</span></div>-->
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--<div class="bor"></div>-->
+
+                        <!-- Recent post starts. Note down the class name before editing. -->
+
+
+                        <!-- Recent post ends -->            
+
+
+                        <!-- Clients starts -->
+
+                        <div class="row">
+                            <div class="span12">
+                                <div class="clients">
+                                    <h4>Powered By Five</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clients ends -->
+
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+        <!-- Content ends --> 
+
+
+        <!-- JS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.isotope.js"></script>
+        <script src="js/jquery.prettyphoto.js"></script>
+        <script src="js/filter.js"></script>
+        <script src="js/jquery.tweet.js"></script>
+        <script src="js/jquery.cslider.js"></script>
+        <script src="js/modernizr.custom.28468.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
